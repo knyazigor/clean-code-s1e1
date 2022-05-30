@@ -101,6 +101,7 @@ var editTask=function(){
 
     //toggle .editmode on the parent.
     listItem.classList.toggle("todo__task-wrapper_edit-mode");
+    listItem.classList.toggle("todo__task-wrapper");
 };
 
 
