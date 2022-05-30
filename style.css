@@ -17,8 +17,10 @@ body {
   font-family: fantasy, cursive;
 }
 
-@media (max-width: 768px) {
-  .todo__header { text-align: center;
+@media (max-width:768px) {
+
+  .todo__header { 
+    text-align: center;
   }
 }
 .todo__main-centered-container {
