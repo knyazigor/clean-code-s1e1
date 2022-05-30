@@ -17,7 +17,7 @@ body {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .todo__header { 
     text-align: center;
@@ -137,12 +137,12 @@ li >    input[type="text"] {
 
 /* Edit Task */
 .todo__task-wrapper input[type="text"] {
-  display: none;
+  display: none
 }
 
 .todo__task-wrapper_edit-mode input[type="text"] {
-  display:inline-block;
-  width: 224px;
+  display: inline-block;
+  width: 224px
 }
 
 .todo__task-wrapper_edit-mode label {
