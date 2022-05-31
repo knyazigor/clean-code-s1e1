@@ -18,7 +18,7 @@ var completedTasksHolder=document.querySelector(".todo__completed-tasks");//comp
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
-    listItem.classList.add("todo__task-wrapper");
+    listItem.classList.add("todo__task-wrapper");    
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -28,26 +28,34 @@ var createNewTaskElement=function(taskString){
     var editInput=document.createElement("input");//text
     //button.edit
     var editButton=document.createElement("button");//edit button
+    
 
     //button.delete
     var deleteButton=document.createElement("button");//delete button
+    
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
     label.className='todo__task';
+    label.classList.add("todo__task-label");
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.classList.add("todo__checkbox")
     editInput.type="text";
     editInput.className="todo__task";
+    editInput.classList.add("todo__text-input");
+    editInput.classList.add("todo__text-input_wide");
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="todo__edit-button";
-
+    editButton.classList.add("button");
+    
     deleteButton.className="todo__delete-button";
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.classList.add("todo__delete-img");
     deleteButton.appendChild(deleteButtonImg);
-
+    deleteButton.classList.add("button");
 
     //and appending.
     listItem.appendChild(checkBox);
@@ -101,7 +109,7 @@ var editTask=function(){
 
     //toggle .editmode on the parent.
     listItem.classList.toggle("todo__task-wrapper_edit-mode");
-    listItem.classList.toggle("todo__task-wrapper");
+    //listItem.classList.toggle("todo__task-wrapper");
 };
 
 
