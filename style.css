@@ -36,6 +36,8 @@
 .todo__task-row-wrapper {
   display: flex;
 }
+/*Reset default styles of elements*/
+/*Не противоречит пункту 3.4 руководсnва, см. этот самый пункт*/
 ul {
   margin: 0;
   padding: 0px;
@@ -48,6 +50,7 @@ input,
 button {
   outline: none;
 }
+/*End of reset styles*/
 .button {
   background: none;
   border: 0px;
